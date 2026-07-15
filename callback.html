@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>Authorization successful</h1>
+<p id="code"></p>
+<script>
+var code = new URLSearchParams(window.location.search).get('code');
+document.getElementById('code').textContent = 'Your code: ' + code;
+</script>
+</body>
+</html>
